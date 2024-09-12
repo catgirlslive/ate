@@ -12,5 +12,13 @@
     "lang": "en",
     "display_override": [
       "window-controls-overlay"
+    ],
+    "icons": [
+        {
+            "src": "https://16.8.poppy.gg/icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
     ]
 }

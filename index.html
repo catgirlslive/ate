@@ -1,0 +1,48 @@
+<!doctype html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        :root {
+            --bg: #000000;
+            --fg: #ffffff;
+        }
+        body, html {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        html {
+            background-color: var(--bg);
+            color: var(--fg);
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    const begin_window = '16:00';
+    const end_window = '23:59';
+
+    function isTimeBetween(begin_window, end_window) {
+        const now = new Date();
+        const currentTime = now.getHours() * 100 + now.getMinutes();
+        const start = parseInt(begin_window.replace(':', ''), 10);
+        const end = parseInt(end_window.replace(':', ''), 10);
+        return (currentTime >= start && currentTime <= end);
+    }
+
+    if (isTimeBetween(begin_window, end_window)) {
+        document.body.innerHTML = '<h1>^<^</h1>'
+        document.querySelector(':root').style.setProperty('--bg', '#ffffff');
+        document.querySelector(':root').style.setProperty('--fg', '#000000');
+    } else {
+        document.body.innerHTML = '<h1>^~^</h1>'
+        document.querySelector(':root').style.setProperty('--bg', '#000000');
+        document.querySelector(':root').style.setProperty('--fg', '#ffffff');
+    }
+</script>

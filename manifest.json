@@ -1,0 +1,16 @@
+{
+    "background_color": "#000000",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "168",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "168",
+    "start_url": "/",
+    "theme_color": "#000000",
+    "id": "gg.poppy.168",
+    "lang": "en",
+    "display_override": [
+      "window-controls-overlay"
+    ]
+}
